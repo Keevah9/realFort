@@ -36,13 +36,13 @@ useEffect(()=>{
     return () => clearTimeout(timeout);
 },[message])
     return (
-      <div className="py-16 px-12 " id="join">
-        <h2 className="text-center font-bold text-5xl pb-12 mt-8 text-green-900">
+      <>
+        <h2 className="text-center mx-auto font-bold  pb-4 mt-8 text-white">
           {sub}
         </h2>
         <form
           onSubmit={subscribe}
-          className="text-center h-full mt-120mx-auto "
+          className="text-center h-full mt-12mx-auto "
         >
           <label htmlFor="email-input" className="pr-4 ">
             {"Email Address:"}
@@ -57,7 +57,7 @@ useEffect(()=>{
           />
 
           <div>
-            <p className="pt-4">{message ? message : `${trust}`}</p>
+            <p className="pt-4 ">{message ? message : `${trust}`}</p>
           </div>
           <button
             type="submit"
@@ -66,16 +66,16 @@ useEffect(()=>{
             {join}
           </button>
         </form>
-      </div>
+      </>
     );
   }
 
 function Newsletter() {
   return (
-    <>
+    <div id='news'>
 
       <News join="Join Us" trust="" />
-    </>
+    </div>
   );
 }
 export default Newsletter
