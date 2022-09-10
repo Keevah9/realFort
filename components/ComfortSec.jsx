@@ -5,7 +5,7 @@ const ComfortSec = () => {
     <div>
       <div className='w-full sm:flex justify-between gap-12'>
         <div className='sm:w-1/2'>
-          <h3 className='w-full text-center sm:text-left text-[4vw] md:text-[2.8vw] lg:text-[2vw] tracking-[-0.05em] font-bold '>
+          <h3 className='w-full text-center sm:text-left text-[4vw] md:text-[2.8vw] lg:text-[2vw] tracking-[-0.05em] font-bold'>
           HOME IS OUR PLACE
         </h3>
           <div className='border-t border-2 mx-auto sm:mx-0 w-[15rem]'>

@@ -9,13 +9,23 @@ const FAQ = () => {
           <h3 className='w-full text-center sm:text-left text-[4vw] md:text-[2.8vw] lg:text-[2vw] tracking-[-0.05em] font-bold '>Get to know us</h3>
         <p className='text-3xl font-bold pt-16'>Our culture</p>
         <ul className='py-6'>
-          <li className='py-4'><a href='/About#what' scroll={false}>What is RentalFort?</a></li>
-          <li className='py-4'><a href='/About#why' scroll={false}>Why US?</a></li>
-          <li className='pt-4'><a href='/About#types' scroll={false}>What are the property types in RentalFort?</a></li>
+          <Link href='/About#what' scroll={false}>
+            <li className='py-4'> What is RentalFort?</li>
+          </Link>
+          
+          <Link href='/About#why' scroll={false}>
+            <li className='py-4'> Why US?</li>
+          </Link>
+          <Link href='/About#types' scroll={false}>
+            <li className='py-4'> What properties are in RentalFort?</li>
+          </Link>
           
         </ul>
         </div>
-        <button className='h-fit mb-8 md:mt-10 rounded-xl px-6 py-2 bg-black text-white'><a href="/About#news" scroll={false}>Join US </a></button>
+        <Link href='/About#news' scroll={false}>
+            <button className='h-fit mb-8 md:mt-10 rounded-xl px-6 py-2 bg-black text-white'>Join US </button>
+          </Link>
+        
       </div>
       <div className='md:w-1/2'>
         <img

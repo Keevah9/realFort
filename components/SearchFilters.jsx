@@ -49,7 +49,7 @@ const SearchFilters = () => {
       </div>
       
       {filters.map((filter)=>(
-          <div className='py-2 mx-auto'>
+          <div className='py-2 mx-auto' key={filter.queryName}>
             {filter.queryName}
             <select 
             onChange={(e) => searchProperties({ [filter.queryName]: e.target.value })}
@@ -57,7 +57,7 @@ const SearchFilters = () => {
             className='border-2 ml-2 border-green-900 w-fit'
             >
               {filter?.items?.map((item) => (
-              <option value={item.value} >
+              <option value={item.value} key={item.value}>
                 {item.name }
                 
               </option>

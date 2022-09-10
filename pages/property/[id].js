@@ -152,16 +152,16 @@ const PropertyDetails = ({
               {category} hi
             </button> */}
               <h1 className="font-bold text-4xl ">
-                {" "}
                 Detail page in progress....{" "}
               </h1>
-              <h2>
-                <a href="/">go back home</a>
-              </h2>
-              or
-              <h2>
-                <a href="/Search">go back properties</a>
-              </h2>
+              <Link href="/Search">
+                <h2>go back properties</h2>
+              </Link>
+              or 
+              <Link href="/">
+                <h2>go back home</h2>
+              </Link>
+              
             </div>
           </div>
         </div>

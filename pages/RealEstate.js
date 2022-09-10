@@ -51,11 +51,11 @@ const RealEstate = ({propertiesForRent, propertiesForSale}) => {
           ))}
         </div>
       </div>
-      <div className="flex gap-12 items-center justify-center">
+      {/* <div className="flex gap-12 items-center justify-center">
         <span className="bg-black text-white px-4 py-1 rounded">
           <a href="/Property">1</a>
-        </span>
-        <span className="bg-black text-white px-4 py-1 rounded">
+        </span> */}
+        {/* <span className="bg-black text-white px-4 py-1 rounded">
           <a href="/FirstPage">2</a>
         </span>
         <span className="bg-black text-white px-4 py-1 rounded">
@@ -66,8 +66,8 @@ const RealEstate = ({propertiesForRent, propertiesForSale}) => {
         </span>
         <span className="bg-black text-white px-4 py-1 rounded">
           <a href="/Property">5</a>
-        </span>
-      </div>
+        </span> */}
+      {/* </div> */}
     </section>
   );
 };
