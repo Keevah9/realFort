@@ -78,7 +78,7 @@ const SearchFilters = () => {
               placeholder='Type Here'
               value={searchTerm}
               className='w-[350px] mx-auto focus:border-gray-300 border-2 mt-4'
-              onChange={(e) => setSearchTerm(e.target.value)}
+              
             />
             {searchTerm !== '' && (
               <MdCancel size={23}
