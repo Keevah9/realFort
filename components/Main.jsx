@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import homeImg from '../public/assets/real1.jpeg'
-const Main = () => {
+
+const Main = ({head, image}) => {
   return (
-    <div className=''>
-      <h1 className=' text-[15.8vw] sm:text-[16.4vw] md:text-[15.3vw] lg:text-[12vw] tracking-[-0.05em]  font-bold'>RENTALFORT</h1>
+    <div className='mx-auto md:w-5/6 lg:w-4/6 pb-6 px-4'>
+      <h1 className=' text-[15.8vw] sm:text-[16.4vw] md:text-[15.3vw] lg:text-[12vw] tracking-[-0.05em] text-center  font-bold'>{head}</h1>
       <Image
-      src={homeImg}
+      src={image}
       min-width={600}
       height={600}
       alt='houses'

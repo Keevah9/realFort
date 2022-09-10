@@ -5,7 +5,9 @@ const Footer = () => {
   return (
     <section className='w-full mx-auto md:w-5/6 lg:w-4/6 pb-6 px-10 h-auto md:px-0 py-12'>
       <div className='sm:flex justify-between items-center'>
-        <h2 className='text-center font-bold text-4xl'>RENTALFORT</h2>
+        <h3 className='font-bold text-4xl'>
+          <a href='/'>RentalFort</a>
+        </h3>
         <div className="py-10 items-center  justify-end  " id="join">
           <News sub='Subscribe to our Newsletter'
         trust=''

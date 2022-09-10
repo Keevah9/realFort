@@ -13,8 +13,8 @@ const ComfortSec = () => {
         </div>
         
         <div className='sm:w-1/2 pt-3'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum similique corrupti quisquam nostrum vitae doloremque atque soluta ipsa reprehenderit! Exercitationem!</p>
-        <p className='pt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsum nobis explicabo.</p>
+          <p>You will only get what you want and need, nothing less. We prioritize luxury and comfort and we make sure it doesn't come at a nec-cutting price because we want you to get that luxury at affordable prices </p>
+        <p className='pt-4'>Find affordable apartments and houses with us. We will never negotiate our quality, be rest assured. </p>
         </div>
       </div>
     </div>

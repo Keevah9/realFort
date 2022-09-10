@@ -37,7 +37,7 @@ useEffect(()=>{
 },[message])
     return (
       <>
-        <h2 className="text-center mx-auto font-bold  pb-4 mt-8 text-white">
+        <h2 className="text-center mx-auto font-bold  pb-4 mt-8 text-white" id='contacts'>
           {sub}
         </h2>
         <form
@@ -55,7 +55,7 @@ useEffect(()=>{
             required
             type="email"
           />
-
+          
           <div>
             <p className="pt-4 ">{message ? message : `${trust}`}</p>
           </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-const WhatReal = ({photo1, photo2, heading,desc,buttonText}) => {
+const WhatReal = ({photo1, url, photo2, heading,desc,buttonText}) => {
   return (
     <>
       <div className='md:w-1/2'>
@@ -9,7 +9,7 @@ const WhatReal = ({photo1, photo2, heading,desc,buttonText}) => {
         </div>
         <p className='py-6'>{desc}</p>
         <div className='my-10'>
-          <a href="/RealEstate" className='my-4 rounded-2xl bg-black px-4 py-2 text-white block mx-auto md:mx-0 w-fit'>{buttonText}</a>
+          <a href={url} className='my-4 rounded-2xl bg-black px-4 py-2 text-white block mx-auto md:mx-0 w-fit'>{buttonText}</a>
         </div>
         <img src={photo2}
           alt='houses' className='sm:h-[250px]   w-full block mx-auto md:mx-0'/>

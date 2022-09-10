@@ -11,7 +11,7 @@ const Banner = ({
   linkName,
   imageUrl,
 }) => (
-  <div className="flex flex-wrap justify-center items-center py-8">
+  <div className="flex flex-wrap justify-center items-center py-8 mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8">
     <Image src={imageUrl} width={500} height={300} alt="banner" />
     <div className="p-6">
       <p className="text-gray-500 text-xl py-2 font-medium">{purpose}</p>

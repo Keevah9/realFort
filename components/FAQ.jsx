@@ -19,7 +19,7 @@ const FAQ = () => {
       </div>
       <div className='md:w-1/2'>
         <img
-        src='/assets/rent.webp'
+        src='/assets/rent3.jpeg'
         alt='houses'
         className='h-[22rem] w-full'
         />

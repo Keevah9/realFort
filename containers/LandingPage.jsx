@@ -1,7 +1,7 @@
 import React from 'react'
 import {Header, Footer} from '../containers'
 import Head from 'next/head'
-
+// import { useGeneralContext } from '../components/context'
 const LandingPage = ({children}) => {
   return (
     <>
@@ -13,7 +13,7 @@ const LandingPage = ({children}) => {
     <header className='py-6 w-full h-auto shadow-md md:px-0 px-10'>
         <Header />
     </header>
-    <main className='w-full mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8 h-auto md:px-0'>
+    <main className='w-full  h-auto md:px-0' >
         {children}
     </main>
     <footer className='w-full bg-black text-white'>

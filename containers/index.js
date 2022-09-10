@@ -5,3 +5,6 @@ export { default as MainBanner} from "../containers/MainBanner";
 export { default as Footer } from "../containers/Footer";
 export { default as LandingPage} from "../containers/LandingPage";
 export { default as Header } from "../containers/Header";
+export { default as Property } from "../containers/Property";
+export { default as Cities } from "../containers/Cities";
+export { default as PropertyDetail } from "../containers/PropertyDetail";

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ShortAbout = ({desc,photo1, photo2,head,head2,head3, desc3, desc2, btn}) => {
+const ShortAbout = ({desc,photo1, photo2,head,head2,head3, desc3,url, desc2, btn}) => {
   return (
-    <section className="my-12 relative sm:px-8 md:px-0">
+    <section className="my-12 relative sm:px-8 md:px-0 mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8">
     <div className='sm:flex gap-12'>
             <h2 className='text-center sm:text-left text-[5vw] sm:text-[3vw] lg:text-[2.5vw] tracking-[-0.05em]  font-bold sm:w-1/2'>{head}</h2>
             <div className='sm:w-1/2'>
@@ -11,7 +11,7 @@ const ShortAbout = ({desc,photo1, photo2,head,head2,head3, desc3, desc2, btn}) =
             <p className='pt-8'>
                 {desc}
             </p>
-            <button className='px-4 py-2 bg-black text-white rounded-xl my-6'>{btn}</button>
+            <a className='px-4 py-2 bg-black text-white rounded-xl block w-fit my-6' href={url}>{btn}</a>
             </div>
             
         </div>
@@ -25,7 +25,7 @@ const ShortAbout = ({desc,photo1, photo2,head,head2,head3, desc3, desc2, btn}) =
           </p>
           
         </div>
-        <div className="bg-white text-black w-[23rem] p-8 absolute top-[-2rem] right-[-1.2rem]">
+        <div className="bg-white text-black max-w-[23rem] p-8 absolute top-[-4rem] right-[-1.2rem]">
           <h4 className="font-bold text-3xl pb-6">{head3}</h4>
           <p>
             {desc3}
