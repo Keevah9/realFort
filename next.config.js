@@ -14,4 +14,7 @@ module.exports = {
   images: {
     domains: ["lid.zoocdn.com", "media.istockphoto.com"],
   },
+  experimental: {
+    forceSwcTransforms: true,
+  },
 };

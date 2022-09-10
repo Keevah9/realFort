@@ -2,8 +2,8 @@ import React,{useState,useEffect} from 'react'
 import { useRouter } from 'next/router';
 import { MdOutlineClose, MdCancel } from 'react-icons/md'
 import Image from 'next/image'
-import { filterData, getFilterValues } from '../Utils/FilterData'
-import { baseUrl, fetchApi } from '../utils/fetchApi';
+import { filterData, getFilterValues } from '../Utils/filterData'
+import { baseUrl, fetchApi } from '../Utils/fetchApi';
 import {BsFilter} from 'react-icons/bs'
 import { useGeneralContext } from '../components/context'
 import {Spinner, } from '@chakra-ui/react';

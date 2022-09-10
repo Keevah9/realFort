@@ -2,7 +2,6 @@ import React from 'react'
 import { useState, useEffect, useRef } from 'react';
 import { cities, getFilterValues, } from "../Utils/cityData";
 import { useRouter } from 'next/router';
-import { style } from '@mui/system';
 import { City } from '../components';
 
 // import {Search} from '../pages'

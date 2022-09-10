@@ -1,5 +1,5 @@
 import React, {useState, useContext} from "react";
-import { filterData, getFilterValues } from "../Utils/FilterData";
+import { filterData, getFilterValues } from "../Utils/filterData";
 import sublinks from "../data";
 
 const AppContext = React.createContext()
