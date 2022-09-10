@@ -46,28 +46,11 @@ const RealEstate = ({propertiesForRent, propertiesForSale}) => {
           {propertiesForSale.map((property) => (
            <>
               <Property key={property.id} property={property} />
-              {/* <FirstPage key={property.id} property={property} /> */}
+            
             </>
           ))}
         </div>
       </div>
-      {/* <div className="flex gap-12 items-center justify-center">
-        <span className="bg-black text-white px-4 py-1 rounded">
-          <a href="/Property">1</a>
-        </span> */}
-        {/* <span className="bg-black text-white px-4 py-1 rounded">
-          <a href="/FirstPage">2</a>
-        </span>
-        <span className="bg-black text-white px-4 py-1 rounded">
-          <a href="/SecondPage">3</a>
-        </span>
-        <span className="bg-black text-white px-4 py-1 rounded">
-          <a href="/Property">4</a>
-        </span>
-        <span className="bg-black text-white px-4 py-1 rounded">
-          <a href="/Property">5</a>
-        </span> */}
-      {/* </div> */}
     </section>
   );
 };
