@@ -34,7 +34,7 @@ const SearchFilters = () => {
         const data = await fetchApi(`${baseUrl}/auto-complete?search_term=${searchTerm}`);
         setLoading(false);
         setLocationData(data?.suggestions);
-        console.log(locationData)
+        // console.log(locationData)
       };
 
       fetchData();
