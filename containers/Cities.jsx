@@ -24,7 +24,7 @@ const Cities = ({image}) => {
   }
   return (
     
-    <div className='sm:flex gap-8 justify-between items-center w-full h-full my-40 mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8'>
+    <div className='sm:flex gap-8 justify-between items-center md:w-5/6 lg:w-4/6 pb-6 px-8 mx-auto h-auto'>
         <div className='sm:w-1/2 h-full'>
             <h3 className='font-bold text-4xl pb-8'>Check out the biggest cities in the UK</h3>
         <p>You might find sweet deals on apartments and houses. We are big on comfortability and beauty at low costs. </p>

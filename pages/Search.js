@@ -15,25 +15,23 @@ const Search = ({properties}) => {
     const { openFilters, setSearchFilters, searchFilters } = useGeneralContext();
   return (
     <div className="relative h-full mb-48 z-10 ">
-      
       <div className="bg-yellow-100 font-bold text-center min-h-[17rem] px-6  py-8">
         <h2 className="text-3xl py-4">Find your Happyness</h2>
         <p>Search properties for sale and to rent in the UK</p>
 
         <form className="sm:flex items-center justify-center py-8 gap-4 ">
-
           <div className="flex items-center gap-4 pt-4 sm:pt-0 justify-center">
             <Link href="/Search?listing_status=rent" passHref>
-              <p className="rounded-xl bg-purple-200 px-4 py-2 w-fit">
+              <p className="rounded-xl bg-purple-200 px-4 py-2 w-fit cursor-pointer">
                 For Rent
               </p>
             </Link>
             <Link href="/Search?listing_status=sale" passHref>
-              <p className="rounded-xl bg-green-200 px-4 py-2 w-fit">
+              <p className="rounded-xl bg-green-200 px-4 py-2 w-fit cursor-pointer">
                 For Sale
               </p>
             </Link>
-            <BsFilter size={23} onClick={() => openFilters()} />
+            <BsFilter className='cursor-pointer' size={23} onClick={() => openFilters()} />
           </div>
         </form>
         {/* <SearchLocation properties={properties}/> */}
@@ -42,7 +40,7 @@ const Search = ({properties}) => {
       <h3 className="text-5xl py-8 text-center  font-bold">
         Properties {router.query.listing_status}
       </h3>
-      <div className='px-8'>
+      <div className="mx-auto  md:w-5/6 lg:w-5/6 pb-6 px-8 sm:px-0 h-auto">
         {properties.map((property) => (
           <Property property={property} key={property.id} />
         ))}

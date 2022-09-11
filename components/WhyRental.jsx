@@ -2,7 +2,7 @@ import React from 'react'
 
 const WhyRental = () => {
   return (
-    <div className="mt-32 mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8" id="why">
+    <div className="mt-32 mx-auto  pb-6 px-8" id="why">
           <h2 className="font-bold text-center sm:text-5xl text-3xl">
             WHY US?
           </h2>

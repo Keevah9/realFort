@@ -5,7 +5,7 @@ import rent from "../public/assets/rent2.jpeg";
 
 const RentalTypes = () => {
   return (
-    <div className='mt-28 mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8' id='types'>
+    <div className='mt-28 mx-auto  pb-6 px-8' id='types'>
           <h2 className='text-center py-4 text-4xl font-bold uppercase'>
             Property Types
           </h2>

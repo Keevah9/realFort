@@ -84,6 +84,24 @@ import { Property, PropertyDetail } from '../../containers';
 //   );
 // };
 
+export const Sidemenu = ()=>{
+  return (
+    <div className=" md:fixed mt-20">
+      <Link href="#gallery">
+        <p>Gallery</p>
+      </Link>
+      <Link href="#overview">
+        <p>Overview</p>
+      </Link>
+      <Link href="#propertyDetails">
+        <p>Property details</p>
+      </Link>
+      <Link href="#agent">
+        <p></p>
+      </Link>
+    </div>
+  );
+}
 
 const PropertyDetails = ({
   properties: {
@@ -111,25 +129,12 @@ const PropertyDetails = ({
   const [contact, setContact] = useState(false);
   
   return (
-    <section>
-      <div className=" w-full flex ">
+    <section className="mx-auto md:w-5/6 lg:w-4/6 px-10 md:px-0">
+      <div className=" w-full md:flex">
         <div className="w-full h-1/2  mb-20">
           <img src="" alt="house images" />
         </div>
-        <div className="fixed mt-20">
-          <Link href="#gallery">
-            <p>Gallery</p>
-          </Link>
-          <Link href="#overview">
-            <p>Overview</p>
-          </Link>
-          <Link href="#propertyDetails">
-            <p>Property details</p>
-          </Link>
-          <Link href="#agent">
-            <p>{agent_phone}</p>
-          </Link>
-        </div>
+        <Sidemenu/>
         <div className="flex justify-between w-full mt-20 ">
           <div>
             <h4>{displayable_address}</h4>

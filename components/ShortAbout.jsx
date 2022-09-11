@@ -2,7 +2,7 @@ import React from 'react'
 
 const ShortAbout = ({desc,photo1, photo2,head,head2,head3, desc3,url, desc2, btn}) => {
   return (
-    <section className="my-12 relative sm:px-8 md:px-0 mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8">
+    <section className="my-12 relative sm:px-8 md:px-0 mx-auto pb-6 px-8">
     <div className='sm:flex gap-12'>
             <h2 className='text-center sm:text-left text-[5vw] sm:text-[3vw] lg:text-[2.5vw] tracking-[-0.05em]  font-bold sm:w-1/2'>{head}</h2>
             <div className='sm:w-1/2'>

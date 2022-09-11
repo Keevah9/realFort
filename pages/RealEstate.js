@@ -9,7 +9,7 @@ const RealEstate = ({propertiesForRent, propertiesForSale}) => {
   console.log(propertiesForRent, propertiesForSale)
  
   return (
-    <section className="py-6 w-full">
+    <section className="py-6 w-full ">
       <h1 className="py-2 text-center text-5xl capitalize"></h1>
       <div className="py-4 ">
         <Banner
@@ -22,15 +22,13 @@ const RealEstate = ({propertiesForRent, propertiesForSale}) => {
           linkName="/Search?listing_status=rent"
           imageUrl={rent}
         />
-        <div className="flex gap-12 flex-wrap">
+        <div className="flex gap-12 flex-wrap mx-auto md:w-5/6  pb-6 ">
           {propertiesForRent?.map((property) => (
             <>
               <Property key={property.id} property={property} />
               {/* <FirstPage key={property.id} property={property} /> */}
             </>
-            
           ))}
-          
         </div>
         <Banner
           purpose="Buy A HOME"
@@ -42,11 +40,10 @@ const RealEstate = ({propertiesForRent, propertiesForSale}) => {
           linkName="/Search?listing_status=sale"
           imageUrl={buy}
         />
-        <div className="flex gap-12 flex-wrap">
+        <div className="flex gap-12 flex-wrap  mx-auto md:w-5/6  pb-6">
           {propertiesForSale.map((property) => (
-           <>
+            <>
               <Property key={property.id} property={property} />
-            
             </>
           ))}
         </div>

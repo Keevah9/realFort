@@ -4,7 +4,7 @@ import { WhatReal } from '../components'
 
 const ProductsBanner = () => {
   return (
-    <section className=' sm:px-8 md:px-0 mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8'>
+    <section className=' sm:px-8 md:px-0 mx-auto pb-6 px-8 md:w-5/6 lg:w-4/6 pb-6 px-8 h-auto'>
       <div className='flex md:flex-row-reverse flex-col-reverse gap-12 mt-32'>
           <WhatReal 
           photo1='/assets/rent2.jpeg'

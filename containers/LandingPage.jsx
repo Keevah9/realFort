@@ -10,13 +10,13 @@ const LandingPage = ({children}) => {
             Real estate
         </title>
     </Head>
-    <header className='py-6 w-full h-auto shadow-md md:px-0 px-10'>
+    <header className='py-6 w-full h-auto shadow-md md:px-0 px-8'>
         <Header />
     </header>
-    <main className='w-full  h-auto md:px-0' >
+    <main className='w-full mx-auto  md:px-0' >
         {children}
     </main>
-    <footer className='w-full bg-black text-white'>
+    <footer className='w-full bg-black text-white mx-auto '>
         <Footer/>
     </footer>
     </>

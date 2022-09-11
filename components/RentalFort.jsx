@@ -2,7 +2,7 @@ import React from 'react'
 
 const RentalFort = () => {
   return (
-    <div className='mt-28 mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8' id='what'>
+    <div className='mt-28 mx-auto  pb-6 px-8' id='what'>
           <h2 className='text-center py-4 text-4xl font-bold'>
             What is RentalFort?
           </h2>

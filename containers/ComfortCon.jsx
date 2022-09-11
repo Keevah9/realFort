@@ -2,7 +2,7 @@ import React from 'react'
 import {ComfortSec, WhatReal} from '../components'
 const ComfortCon = () => {
   return (
-    <section className=' sm:px-8 md:px-0 mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8'>
+    <section className=' sm:px-8 md:px-0 mx-auto md:w-5/6 lg:w-4/6 pb-6 px-8 h-auto'>
         <ComfortSec/>
         <div className='flex md:flex-row flex-col-reverse gap-12 mt-32'>
           <WhatReal 

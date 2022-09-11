@@ -10,7 +10,7 @@ export const Show = ()=>{
 
     return(
         <>
-            <div className='p-6 text-xl relative'>
+            <div className='p-6 text-xl relative '>
                 
                 <h3 className='pb-2 font-bold'>Property temporarily hidden</h3>
                 <p className='pb-6'>You can show this property anytime</p>
@@ -64,18 +64,18 @@ const Property = ({property: {images,price,rental_prices,num_bathrooms, num_bedr
                 {showPpty ?
                     <div className={` ${is_premium_listing === 1 ? 'border-purple-600 rounded-xl border' : '' }` }>
                     <Link href={`/property/${listing_id}` } passHref>
-                    <div className={` bg-white md:flex relative gap-8 w-full h-full rounded-t-xl` }>
+                    <div className={` bg-white md:flex relative gap-8 w-full h-full rounded-t-xl cursor-pointer` }>
                        
                         <>
                         <div className=' h-full md:w-1/2 relative'>
                             {images &&
-                                <Image 
+                                <img
                                     src={image_url}
                                     alt='house to rent/sell'
                                     width={500}
                                     layout='responsive'
                                     height={380}
-                                    className='  rounded-tl-xl h-full relative'
+                                    className='  rounded-tl-xl h-[26rem] w-full relative'
                                     />
                             }
                             {property_badge && <p className='absolute  top-[1rem] p-4 left-[1rem] rounded-xl bg-white text-black font-bold'>Newly added</p> }
@@ -116,7 +116,7 @@ const Property = ({property: {images,price,rental_prices,num_bathrooms, num_bedr
                          
                         </div>
                         </Link>
-                    <div className='flex justify-between items-center p-6 border-t-2 rounded-b-xl bg-white'>
+                    <div className='flex justify-between items-center pt-3 px-6 border-t-2 rounded-b-xl bg-white'>
                         <div>
                             <span className='text-gray-500 text-xl'>Listed on {listing_date}</span>
                             {/* <span></span> */}
@@ -135,7 +135,7 @@ const Property = ({property: {images,price,rental_prices,num_bathrooms, num_bedr
                     </div>
                     
                 : <Show/>}
-        <div className='absolute pt-6 top-0 right-[1rem]'>
+        <div className='absolute pt-6 top-0 right-[1rem] cursor-pointer'>
             {show ? <MdOutlineClose size={23} onClick={()=>{setShowPpty(false)
                                 setShow(false)}}/>
                                 : <p onClick={()=>{setShowPpty(true)

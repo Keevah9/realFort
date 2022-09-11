@@ -3,7 +3,7 @@ import { News } from '../components/Newsletter'
 
 const Footer = () => {
   return (
-    <section className='w-full mx-auto md:w-5/6 lg:w-4/6 pb-6 px-10 h-auto md:px-0 py-12'>
+    <section className='w-full mx-auto  py-12 md:w-5/6 lg:w-4/6 pb-6 px-10'>
       <div className='sm:flex justify-between items-center'>
         <h3 className='font-bold text-4xl'>
           <a href='/'>RentalFort</a>

@@ -3,7 +3,7 @@ import {ShortAbout} from '../components'
 
 const AboutSec = () => {
   return (
-    <div>
+    <div className='md:w-5/6 lg:w-4/6 pb-6  mx-auto'>
         <ShortAbout desc='We have developed new solutions to meet your needs, while leveraging your deep insights, practical needs, and broad range of capabilities in finding your new home'
         head='Improving Home and Families through buildings'
         btn='Find Yours'

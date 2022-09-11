@@ -9,7 +9,7 @@ import {Sidebar} from '../components'
 const Navbar = () => {
   const [menuToggle,setMenuToggle] = useState(false)
   return (
-    <nav className='flex justify-between mx-auto items-center w-full h-auto lg:w-4/6 md:w-5/6'>
+    <nav className='flex justify-between mx-auto items-center w-full h-auto lg:w-4/6 px-4  md:w-5/6'>
       <div className='flex justify-between w-1/2 md:w-fit md:justify-start gap-4 items-center '>
      <h3 className='font-bold text-4xl text-green-900'>
          <Link href='/'>RentalFort</Link>

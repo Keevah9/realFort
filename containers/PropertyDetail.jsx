@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 const PropertyDetail = ({property: {images,price,rental_prices,num_bathrooms, num_bedrooms,num_recepts,num_floors, agent_phone, property_badge,short_description, displayable_address,title, is_premium_listing,listing_id,area, first_published_date, listing_date, image_url}}) => {
   return (
-    <div className=" w-full flex ">
+    <div className=" w-full flex md:w-5/6 lg:w-4/6 pb-6 px-8 h-auto">
       <div className="w-full h-1/2  mb-20">
         <img src="" alt="house images" />
       </div>
