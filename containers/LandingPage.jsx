@@ -1,6 +1,7 @@
 import React from 'react'
 import {Header, Footer} from '../containers'
 import Head from 'next/head'
+
 // import { useGeneralContext } from '../components/context'
 const LandingPage = ({children}) => {
   return (
